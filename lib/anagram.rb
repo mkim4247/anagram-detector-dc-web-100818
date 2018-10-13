@@ -9,13 +9,9 @@ class Anagram
   end 
   
   def match(word_list)
-    desired = []
-    check = word_list.collect do |word|
-      if word.split("").sort == @word.split("").sort 
-        desired << word 
-      end 
+    word_list.collect do |word|
+      word.split("").sort == @word.split("").sort 
     end 
-    desired 
   end 
   
 end 
