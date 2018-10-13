@@ -10,11 +10,8 @@ class Anagram
   
   def match(word_list)
     word_list.select do |word|
-      if word.split("").sort == @word.split("").sort 
-        desired << word 
-      end 
+      word.split("").sort == @word.split("").sort 
     end 
-    desired 
   end 
   
 end 
